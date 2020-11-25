@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>자바스크립트 연습</title>
+		
+	</head>
+
+	<body>
+		<div onmouseover="mouseEnter()" onmouseout="mouseExit()" id="mouseover">마우스를 올려보세요</div>
+		<div id="tooltip" style="display: none; background-color: black; color: white">내용</div>
+
+		<script>
+			let item = document.getElementById("mouseover");
+			let tooltip = document.getElementById("tooltip");
+
+			function mouseEnter(){
+				tooltip.style.display = "block";
+			}
+
+			function mouseExit(){
+				tooltip.style.display = "none";
+			}
+		</script>
+		
+	</body>
+
+</html>

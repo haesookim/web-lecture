@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>자바스크립트 연습</title>
+		
+	</head>
+
+	<body>
+		<input id="text-input"placeholder="입력을 해 주세요">
+		<button onclick="clickButton()">나를 눌러 보세요</button>
+		<div id="invisible-content"></div>
+
+		<script>
+			let input = document.getElementById("text-input");
+			let toView = document.getElementById("invisible-content");
+
+			function clickButton(){
+				let inputString = input.value;
+				toView.innerHTML = inputString
+			}
+		</script>
+		
+	</body>
+
+</html>

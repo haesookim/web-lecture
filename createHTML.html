@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>자바스크립트 연습</title>
+		
+	</head>
+
+	<body>
+		<div id="parent"></div>
+
+		<script>
+			let parent = document.getElementById("parent");
+
+			let data = [
+				{
+					name: "Haesoo Kim",
+					status: "undergrad",
+					occupation: "tutor"
+				},{
+					name: "Hwajeong Hong",
+					status: "professor",
+					occupation: "instructor"
+				},{
+					name: "Seongmin Park",
+					status: "grad",
+					occupation: "TA"
+				},
+			]
+
+			for (let i = 0; i<data.length; i++){
+				let component = document.createElement("div");
+				let name = document.createElement("div");
+				name.innerText = data[i].name;
+				let status =document.createElement("div");
+				status.innerText = data[i].status;
+				let occupation =document.createElement("div");
+				occupation.innerText = data[i].occupation;
+
+				component.appendChild(name);
+				component.appendChild(status);
+				component.appendChild(occupation);
+
+				component.className = "class-member"
+				parent.appendChild(component);
+			}
+		</script>
+	</body>
+
+</html>

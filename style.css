@@ -1,0 +1,36 @@
+body{
+	background-color: wheat;
+}
+
+h1{
+	color:rgb(0, 0, 255);
+	text-align: center;
+	font-family: 'Do Hyeon';
+	font-size: 60px;
+}
+
+p{
+	background-color: aqua;
+	
+	font-weight: bold;
+	margin: 50px 30px;
+}
+
+
+.testclass{
+	background-color: violet;
+}
+
+.link{
+	background-color: transparent;
+}
+
+
+#outsidelink{
+	background-color: tomato;
+}
+
+#leftright{
+	display: flex;
+	justify-content: center;
+}

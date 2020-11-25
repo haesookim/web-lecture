@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>자바스크립트 연습</title>
+		
+	</head>
+
+	<body>
+		<div class="to-select">내용</div>
+		<div class="to-select">내용</div>
+		<div class="to-select">내용</div>
+		<div class="to-select">내용</div>
+		<div class="to-select">내용</div>
+		<div class="to-select">내용</div>
+		<div class="to-select">내용</div>
+
+		<div id="to-show" style="display:none;">숨겨진 내용</div>
+
+		<script>
+			let itemsByClass = document.getElementsByClassName("to-select");
+			let itemsByQuery = document.querySelectorAll(".to-select"); //이때는 css에서와 같이 .을 붙여줘야 합니다
+			let toShow = document.querySelector("#to-show")
+
+			for (let i = 0; i<itemsByClass.length; i++){
+				itemsByClass[i].addEventListener("click", function(){
+					if(toShow.style.display=="none"){
+						toShow.style.display="block"
+					} else{
+						toShow.style.display="none"
+					}
+				})
+			}
+		</script>
+	</body>
+
+</html>
